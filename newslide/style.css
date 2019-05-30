@@ -3,32 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+.icon {
+  width: 1.5em; height: 1.5em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
 .window{
   width: 400px;
   height: 300px;
-  margin: 100px auto;
+  margin: 20px auto;
   overflow: hidden;
 }
 .images{
-  position: relative;
+  display: flex;
+  transition: all 0.3s;
 }
 .images > img{
   width: 100%;
+}
+.btn{
+  text-align: center;
+}
+.btn > svg{
+  fill: #ABABAB;
   transition: all 0.3s;
-  position: absolute;
-  top: 0;
 }
-
-/* 轮播图片的3个状态 */
-.images > img.current{
-  left: 0;
-  transform: translateX(0);
-  z-index: 1;
+.btn > svg.active{
+  fill: #626262;
+  transform: scale(1.2);
 }
-.images > img.leave{
-  transform: translateX(-100%);
-  z-index: 1;
-}
-.images > img.enter{
-  transform: translateX(100%);
+.container{
+  text-align: center;
 }

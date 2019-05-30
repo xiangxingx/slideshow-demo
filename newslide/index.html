@@ -8,26 +8,50 @@
   <title>无缝的轮播</title>
   <link rel="stylesheet" href="./style.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+  <script src="//at.alicdn.com/t/font_1218475_jexi25xqilc.js"></script>
 </head>
 
 <body>
-  <div class="window">
-    <div class="images">
-      <img src="./001.jpg" alt="图片1" width="400" height="300">
-      <img src="./002.jpg" alt="图片2" width="400" height="300">
-      <img src="./003.jpg" alt="图片3" width="400" height="300">
-      <img src="./004.jpg" alt="图片4" width="400" height="300">
-      <img src="./005.jpg" alt="图片5" width="400" height="300">
-      <img src="./006.jpg" alt="图片6" width="400" height="300">
+
+  <div class="container">
+    <div class="window">
+      <div class="images" id="slides">
+        <img src="./001.jpg" alt="图片1" width="400" height="300">
+        <img src="./002.jpg" alt="图片2" width="400" height="300">
+        <img src="./003.jpg" alt="图片3" width="400" height="300">
+        <img src="./004.jpg" alt="图片4" width="400" height="300">
+        <img src="./005.jpg" alt="图片5" width="400" height="300">
+        <img src="./006.jpg" alt="图片6" width="400" height="300">
+      </div>
+    </div>
+
+    <div id="controls">
+      <button id="previous">上一张</button>
+      <button id="next">下一张</button>
+    </div>
+
+    <div class="btn" id="btn">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-yuandian"></use>
+      </svg>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-yuandian"></use>
+      </svg>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-yuandian"></use>
+      </svg>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-yuandian"></use>
+      </svg>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-yuandian"></use>
+      </svg>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-yuandian"></use>
+      </svg>
     </div>
   </div>
-  <script>
 
-    document.addEventListener('visibilitychange', function (ev) {
-      console.log(document.hidden)
-    })
-
-  </script>
   <script src="./main.js"></script>
 </body>
 
